@@ -111,10 +111,10 @@ if($host.Name -eq 'ConsoleHost') {
 }
 
 # Test for Elevated privilege if required
-If (!(([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator"))){
-    Write-Host -ForegroundColor Red "Exiting Invoke-DownloadCradle: Elevated privilege required to remove cache files"
-    exit
-}
+#If (!(([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator"))){
+#    Write-Host -ForegroundColor Red "Exiting Invoke-DownloadCradle: Elevated privilege required to remove cache files"
+#    exit
+#}
 
 
 clear
